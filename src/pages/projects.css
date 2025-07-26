@@ -1,0 +1,51 @@
+.Projects{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    font-family:'montserrat';
+}
+.projectsContainer{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.projectsPageTitle{
+    font-size: 37px;
+    font-weight: 700;
+    text-align: center;
+    margin: 30px 0;
+    padding-top: 70px;
+}
+.projectItem{
+    background-color: black;
+    width: 300px;
+    height: 370px;
+    border-radius: 20px;
+    border: 2px solid #7F27FF;
+    padding: 20px;
+}
+.project_thumbnail{
+    background-color: #fff;
+    height: 50%;
+    margin: auto;
+    border-radius: 10px;
+}
+.techStack_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.techStack_used{
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    border: 1px solid #7F27FF;
+}
+.button-container{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}

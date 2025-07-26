@@ -1,0 +1,239 @@
+/* Home page  */
+.Home{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family:'montserrat';
+}
+.homecontainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+    padding-top: 70px;
+    padding-bottom: 150px;
+}
+.homeleftside{
+    padding:10% 0 0 10px;
+    width: 350px;
+}
+.homepagetitle{
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 3rem;
+    width: 345px;
+    position: relative;
+    z-index: 0;
+    margin: 0;
+}
+.homepagesubtitle{
+    font-size: 1.75rem;
+    font-weight: 200;
+    line-height: 0.5rem;
+}
+.profilepic{
+    width:400px;
+    height:400px;
+    margin-top: 70px;
+    position: relative;
+    z-index: 2;
+}
+.typed-cursor{
+    font-size: 30px;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    10% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    10% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    10% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+.rotatecontainer{
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    width: 170px;
+    margin: auto;
+    cursor: pointer;
+}
+.myprojects{
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    top: 80px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 900;
+    left: 115px;
+    width: 110px;
+}
+.outerring{
+    margin: auto;
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    border-right: solid white 3px;
+    border-left: solid white 5px;
+    animation: rotate 10s infinite linear;  
+}
+.middlering{
+    margin: auto;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+    height: 130px;
+    width: 130px;
+    border-top: solid white 2px;
+    border-bottom: solid white 3px;
+    animation: rotate 20s infinite linear;  
+}
+.innerring{
+    margin: auto;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+    height: 120px;
+    width: 120px;
+    border-right: solid white 3.5px;
+    animation: rotate 7s infinite linear;  
+}
+.socialIcons{
+    position: absolute;
+    top: 80px;
+    right: 23px;
+    gap: 35px;
+    z-index: 0;
+}
+.socialIconsItems{
+    transition: 300ms;
+}
+.socialIconsItems:hover{
+    color: #7F27FF;
+    outline: 1px solid #7F27FF;
+    outline-offset: 3px;
+    border-radius: 50%;
+    scale: 1.75;
+    transition: 300ms;
+}
+
+@keyframes rotate {
+    0%{
+            transform: rotate(0);
+    }
+    100%{
+            transform: rotate(360deg);
+    }   
+}
+.homecontainer-triangle1{
+    position: fixed;
+    z-index: 0;
+    top: 67px;
+    left: 0;
+    width: 0;
+  height: 0;
+  border-left: 700px solid #7F27FF;
+  border-top: 700px;
+  border-bottom: 130px solid transparent;
+  opacity: 0.7;
+  animation: homeanimate1 0.7s linear;
+}
+.homecontainer-triangle2{
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    right: 0;
+    width: 0;
+  height: 0;
+  border-left: 700px solid transparent;
+  border-top: 700px;
+  border-bottom: 130px solid #7F27FF;
+  opacity: 0.7;
+  animation: homeanimate2 0.7s linear;
+}
+@keyframes homeanimate1 {
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+@keyframes homeanimate2 {
+    0%{
+        right: -100%;
+    }
+    100%{
+        right: 0;
+    }
+}
+@media (max-width:1000px) {
+    .homecontainer-triangle1, .homecontainer-triangle2{
+        display: none;
+    }
+}
+@media (max-width:850px) {
+    .profilepic{
+        width: 340px;
+        height: 340px;
+        margin-top: 15px;
+    }
+    .homeleftside{
+        padding: 10% 0 0 0;
+        text-align: center;
+    }
+    .homepagetitle{
+        font-size: 2.5rem;
+    }
+    .downloadBtn{
+        margin: auto;
+    }
+    .myprojects{
+        left: 120px;
+        cursor: pointer;
+    }
+    .Home{
+        height: 100%;
+    }
+    .rotatecontainer{
+        margin-bottom: 30vh;
+    }
+} 
+@media (max-width:450px) {
+    .profilepic{
+        width: 250px;
+        height: 250px;
+    }
+    .homeleftside{
+        padding-top: 0px;
+    }
+    .homerightside{
+        height: 270px;
+    }
+    .homepagetitle{
+        font-size: 1.75rem;
+        width: 300px;
+        margin: auto;
+        top: 30px;
+    }
+    .homepagesubtitle{
+        font-size: 1.4rem;
+    }
+    .homecontainer{
+        height: 100%;
+    }
+    .rotatecontainer{
+        margin-bottom: 10px;
+    }
+} 
